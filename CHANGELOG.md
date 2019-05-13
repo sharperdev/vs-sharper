@@ -2,6 +2,10 @@
 
 All notable changes to the "vs-sharper" extension will be documented in this file.
 
+## 0.0.6
+
+- Demo animations for extension's marketplace listing
+
 ## 0.0.4
 
 - New keyboard shortcuts to embed current line or selection in a code block
