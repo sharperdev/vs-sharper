@@ -8,7 +8,9 @@ An extension to make developing C# projects in VS Code fun and productive.
 
 Creates a new class or interface file and generates an apropriate name for the namespace of the new file.
 
-![Create C# Class or Interface File](images/feature-create-file.gif)
+\!\[Create C# Class or Interface File\]\(images/feature-create-file.gif\)
+
+Use the File Explorer's context menu to add a class or interface file.
 
 > Tip: See below on how to change the generated namespace's name.
 
@@ -16,7 +18,7 @@ Creates a new class or interface file and generates an apropriate name for the n
 
 Embeds the current line or selection in a code control block.
 
-![Create C# Class or Interface File](images/feature-embed-selection.gif)
+\!\[Create C# Class or Interface File\]\(images/feature-embed-selection.gif\)
 
 Available code blocks:
 
@@ -32,6 +34,10 @@ Available code blocks:
 * try { ... } finally { ... }
 * using (...) { ... }
 * while (...) { ... }
+
+Keyboard shortcut: `CMD+I E` on macOS or `Ctrl+I E` on Windows and Linux
+
+> Tip: The feature is also available in 'Quick fixes' and the code editor's context menu.
 
 ## Requirements
 
@@ -50,6 +56,10 @@ For example:
 ```
 The extension looks up the subfolders' chain for a `vssharper.json` file until it reaches the root of the project.
 
+## Telemetry
+
+This extension collects anonymous usage data like VS Code. You can use VS Code's telemetry setting to turn it off.
+
 ## Extension Commands
 
 * Add a New C# Class File (`vsSharper.addCsharpClassFile`)
@@ -63,13 +73,13 @@ No known isssues.
 
 ## Release Notes
 
-### Version 0.0.1
+### Version 0.0.n
 
 First preview release. More features and productivity tools will be added in the coming weeks and months.
 
 Please use Github to report issues or send any feature requests.
 
-### Where is the code?
+### License
 
 This Github repo is for issues and feature requests.
 
