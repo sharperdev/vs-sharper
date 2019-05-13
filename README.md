@@ -79,8 +79,10 @@ First preview release. More features and productivity tools will be added in the
 
 Please use Github to report issues or send any feature requests.
 
-### License
+## License
 
 This Github repo is for issues and feature requests.
 
 The project is a private endeavour and the source code is not publicly available.
+
+See: LICENSE.md
