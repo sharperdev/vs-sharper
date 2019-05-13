@@ -8,7 +8,7 @@ An extension to make developing C# projects in VS Code fun and productive.
 
 Creates a new class or interface file and generates an apropriate name for the namespace of the new file.
 
-\!\[Create C# Class or Interface File\]\(images/feature-create-file.gif\)
+![Create C# Class or Interface File](images/feature-create-file.gif)
 
 Use the File Explorer's context menu to add a class or interface file.
 
@@ -18,7 +18,7 @@ Use the File Explorer's context menu to add a class or interface file.
 
 Embeds the current line or selection in a code control block.
 
-\!\[Create C# Class or Interface File\]\(images/feature-embed-selection.gif\)
+![Create C# Class or Interface File](images/feature-embed-selection.gif)
 
 Available code blocks:
 
