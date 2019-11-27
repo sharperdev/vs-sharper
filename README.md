@@ -2,6 +2,12 @@
 
 An extension to make developing C# projects in VS Code fun and productive.
 
+## Installation
+
+Install from within VS Code or through VS Code [Marketplace](https://marketplace.visualstudio.com/items?itemName=eservice-online.vs-sharper).
+
+Requires an installation of .NET Core Runtime >= 2.1 (2.1, 2.2 or 3.0) or .NET Core SDK for some features.
+
 ## Features
 
 ### Add a New C# Class or Interface File
@@ -37,7 +43,35 @@ Available code blocks:
 
 Keyboard shortcut: `CMD+I E` on macOS or `Ctrl+I E` on Windows and Linux
 
-> Tip: The feature is also available in 'Quick fixes' and the code editor's context menu.
+> Tip: The feature is also available in the code editor's context menu and in 'Quick fixes' after selecting text in the editor.
+
+### Sort and group Using statements
+
+Sorts `using` statements alphabetically and groups them by the first namespace part. The `System` and `Microsoft` namespaces are placed at the beginning.
+
+For example:
+
+```
+using System.Text;
+using Microsoft.Data;
+using SomeOtherLibrary.Core;
+using SomeOtherLibrary;
+using System;
+```
+
+Becomes:
+
+```
+using System;
+using System.Text;
+
+using Microsoft.Data;
+
+using SomeOtherLibrary;
+using SomeOtherLibrary.Core;
+```
+
+Select 'Sort and Group Using Statements' from the 'Quick Fixes' menu when the editor caret is in a line with a `using` statement.
 
 ## Requirements
 
@@ -66,6 +100,7 @@ This extension collects anonymous usage data like VS Code. You can use VS Code's
 * Add a New C# Interface File (`vsSharper.addCsharpClassFile`)
 * Embed Current Line or Selection (`vsSharper.embedSelection`)
 * Embed Current Line or Selection into Code Block (`vsSharper.embedSelection.block`)
+* Sort and group using statements (`vsSharper.sortUsings`)
 
 ## Known Issues
 
@@ -73,16 +108,8 @@ No known isssues.
 
 ## Release Notes
 
-### Version 0.0.n
+See: [Change Log](CHANGELOG.MD)
 
-First preview release. More features and productivity tools will be added in the coming weeks and months.
+More features and productivity tools will be added in the coming weeks and months.
 
 Please use Github to report issues or send any feature requests.
-
-## License
-
-This Github repo is for issues and feature requests.
-
-The project is a private endeavour and the source code is not publicly available.
-
-See: LICENSE.md
